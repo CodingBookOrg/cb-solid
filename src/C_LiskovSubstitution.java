@@ -1,4 +1,4 @@
-public class C_LiskovSubstitutionPrinciple {
+public class C_LiskovSubstitution {
     /**
      * L in SOLID: Liskov Substitution Principle
      * objects in a program would be substitutable with child instances of that object class
