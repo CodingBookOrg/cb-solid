@@ -34,12 +34,13 @@ public class B_OpenClosed {
     }
 
 
-
+//----------------------------------------------------------------------
     /**
      * Using inheritance
      */
     class BaseEmployee {
         public String getName() { return null; }
+        public int getSalary() { return 100; }
     }
 
     class Employee2 extends BaseEmployee {
@@ -52,6 +53,26 @@ public class B_OpenClosed {
     class BaseEmployee_Extended {
         public String getName() { return null; }
         public String getSurname() { return null; }
+    }
+
+
+    //----------------------------------------------------------------------
+    /**
+     * Using polymorphism
+     */
+    class SalaryCalculator {
+        public int calculate(BaseEmployee employee) {
+            return employee.getSalary();
+        }
+    }
+
+    // if we want to add new employee types
+    // we do not need to edit existing implementation
+    class Manager extends BaseEmployee {
+        @Override
+        public int getSalary() {
+            return 300;
+        }
     }
 
 }
