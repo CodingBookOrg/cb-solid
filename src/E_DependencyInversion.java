@@ -4,7 +4,11 @@ public class E_DependencyInversion {
      * BEWARE: It is not dependency injection
      * Abstractions should not depend on details, details should depend on abstracttions
      * Details are implemented using abstractions.
-     * program interfaces
+     * program to interfaces
+     *
+     * Dependency Inversion is more focused on the structure of your code,
+     * its focus is keeping your code loosely coupled.
+     * On the other hand, Dependency Injection is how the code functionally works.
      */
     //******************************************************************
     /**
